@@ -1,0 +1,81 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+:root {
+  --yellow: rgb(252, 204, 1);
+  --blue: rgb(21, 78, 157);
+}
+
+.FixedDiv {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+  background-color: #2700c2;
+  border: 3px solid orange;
+  margin-right: .2rem;
+  padding: 1.3rem .6rem .6rem  .6rem;
+  -webkit-box-shadow: 0 1.5rem 1.5rem black;
+          box-shadow: 0 1.5rem 1.5rem black;
+  border-radius: 90% / 100% 100% 0 0;
+  -webkit-transition: height 300ms ease-in;
+  -o-transition: height 300ms ease-in;
+  transition: height 300ms ease-in;
+  text-decoration: none;
+}
+
+.FixedDiv h3 {
+margin: 0;
+font-family: 'Sedgwick Ave', cursive;
+font-weight: bold;
+color: white;
+-webkit-animation: wiggle 300ms 8000ms 8 ease-out none;
+        animation: wiggle 300ms 8000ms 8 ease-out none;
+}
+
+.FixedDiv:hover,
+.FixedDiv h3:hover {
+color: var(--blue);
+background-color: var(--yellow);
+height: 100px;
+}
+
+@media (max-width: 40rem){
+  .FixedDiv {
+      display: none;
+  }
+}
+
+@-webkit-keyframes wiggle {
+0% {
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+}
+50% {
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
+}
+100% {
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+}
+}
+
+@keyframes wiggle {
+0% {
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+}
+50% {
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
+}
+100% {
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+}
+}

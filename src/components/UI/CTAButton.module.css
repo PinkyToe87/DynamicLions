@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.CTAButton {
+        font-family: 'Fjalla One', sans-serif;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        text-shadow: 2px 2px white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 60%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 1rem auto;
+        -webkit-animation: wiggle 400ms 4s 8 ease-out none;
+                animation: wiggle 400ms 4s 8 ease-out none;
+        -webkit-transition: all .5s ease-out;
+        -o-transition: all .5s ease-out;
+        transition: all .5s ease-out;
+        -webkit-box-shadow: 60px -16px var(--yellow);
+                box-shadow: 60px -16px var(--yellow);
+}
+
+.CTAButton:hover {
+        background-color: var(--yellow);
+        color: var(--blue);
+        cursor: pointer;
+}
+
+.CTAButton h1 {
+
+        margin: 0;
+        display: inline-block;
+}
+
+@-webkit-keyframes wiggle {
+    0% {
+      -webkit-transform: rotateZ(0);
+              transform: rotateZ(0);
+              background-color: blue;
+    }
+    50% {
+      -webkit-transform: rotateZ(-10deg);
+              transform: rotateZ(-10deg);
+    }
+    100% {
+      -webkit-transform: rotateZ(10deg);
+              transform: rotateZ(10deg);
+              background-color: red;
+    }
+  }
+
+@keyframes wiggle {
+    0% {
+      -webkit-transform: rotateZ(0);
+              transform: rotateZ(0);
+              background-color: blue;
+    }
+    50% {
+      -webkit-transform: rotateZ(-10deg);
+              transform: rotateZ(-10deg);
+    }
+    100% {
+      -webkit-transform: rotateZ(10deg);
+              transform: rotateZ(10deg);
+              background-color: red;
+    }
+  }
+  
+  

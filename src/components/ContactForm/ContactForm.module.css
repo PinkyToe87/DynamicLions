@@ -1,0 +1,240 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.joinInformation {
+  margin-bottom: 0.5rem;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(255,255,255, 0.8)),
+      color-stop(40%, rgba(0, 0, 0, 0.5))
+    ),
+    url("../../assests/Images/meetingLocation.png");
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(255,255,255, 0.8),
+      rgba(0, 0, 0, 0.9) .1%
+    ),
+    url("../../assests/Images/meetingLocation.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(255,255,255, 0.8),
+      rgba(0, 0, 0, 0.8) .1%
+    ),
+    url("../../assests/Images/meetingLocation.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  padding: 0.4rem;
+}
+
+.joinInformation h1 {
+  display: inline-block;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  background-color: var(--yellow);
+  color: var(--blue);
+  margin-bottom: 0;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin:  0 auto ;
+}
+
+.mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+}
+
+.information > * {
+  color: white;
+  margin-bottom: .3rem;
+}
+
+.information p {
+text-shadow: 3px 3px black;
+  font-weight: bold;
+}
+
+.address {
+  background-color: white;
+  color: black;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px black;
+          box-shadow: 4px 4px black;
+}
+.address h2 {
+  text-decoration: underline;
+}
+.address > * {
+  margin: 0.3rem 0;
+}
+
+.date {
+  background-color: white;
+  color: black;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px black;
+          box-shadow: 4px 4px black;
+}
+.date h2 {
+  text-decoration: underline;
+}
+.date > * {
+  margin: 0.3rem 0;
+}
+
+.motto {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 8.5vw;
+  color: white;
+  font-style: italic;
+  margin: 0;
+  text-shadow: 2px 2px black;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media (min-width: 40rem) {
+  .joinInformation h1 {
+    font-size: 2rem;
+  }
+  .mainInfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .information {
+    max-width: 700px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.ContactForm {
+  padding: 0.5rem;
+}
+
+.ContactForm h1 {
+  display: inline-block;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  background-color: var(--yellow);
+  color: var(--blue);
+}
+
+.ContactForm form {
+  margin: auto ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.ContactForm label {
+  font-size: small;
+  margin: 0;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  padding: 0;
+  margin-bottom: .9rem;
+  width: 100%;
+}
+
+.ContactForm input:hover,
+.ContactForm textarea:hover,
+.ContactForm input:focus,
+.ContactForm textarea:focus {
+  background-color: var(--yellow);
+  border: 5px solid var(--blue);
+}
+
+.ContactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.ContactForm button {
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-family: "Fjalla One", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.ContactForm button:hover {
+  background-color: var(--yellow);
+  color: var(--blue);
+}
+
+@media (min-width: 40rem) {
+  .ContactForm form {
+    max-width: 50%;
+  }
+}

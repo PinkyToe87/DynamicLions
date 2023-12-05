@@ -1,0 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.board_members {
+    width: 100%;
+    padding: .2rem;
+}
+
+.board_members h2 {
+    display: inline-block;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    background-color: var(--yellow);
+    color: var(--blue);
+}

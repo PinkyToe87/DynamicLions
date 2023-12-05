@@ -1,0 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: .5rem;
+}
+
+footer img {
+  width: 7rem;
+}
+
+footer h1 {
+  color: white;
+  font-size: 1rem;
+}
+
+footer p {
+  color:var(--yellow);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: .8rem;
+}
+
+nav a:hover,
+nav a:active {
+  font-weight: bold;
+  color:var(--yellow);
+}
+
+footer_logo {
+  height: 50px;
+}
+
+@media (min-width: 40rem){
+  footer h1 {
+    font-size: larger;
+  }
+  nav li {
+    display: inline;
+  }
+}

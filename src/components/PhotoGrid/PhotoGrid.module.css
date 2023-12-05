@@ -1,0 +1,172 @@
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.image-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+	background: linear-gradient(-45deg, orange, yellow, var(--yellow), white, var(--blue), blue, orange);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.image-grid img {
+  width: 30vw;
+  margin-bottom: 0.2rem;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-box-shadow: 0 8px 8px -4px black;
+          box-shadow: 0 8px 8px -4px black;
+}
+
+.image-grid img:nth-child(2n + 1) {
+  -webkit-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.image-grid img:nth-child(3n + 1) {
+  -webkit-transform: rotate(-6deg);
+      -ms-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+.image-grid h2 {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14vw;
+  font-style: italic;
+  background-color: var(--yellow);
+  color: var(--blue);
+  text-shadow: 2px 2px white;
+  -webkit-transform: rotate(-6deg);
+      -ms-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+@media (min-width: 799px) {
+  /* .image-grid {
+  background-image: url("../../assests/Images/photoGrid_background.jpg");
+} */
+
+  .image-grid img {
+    width: 20vw;
+  }
+
+  .image-grid img:hover {
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+            transform: scale(1.6);
+    z-index: 20;
+  }
+
+  .image-grid h2 {
+    font-size: 7vw;
+    background-color: var(--yellow);
+    color: var(--blue);
+  }
+
+  .image-grid .gridLogo {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 200px, 0);
+            transform: translate3d(0, 200px, 0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 200px, 0);
+            transform: translate3d(0, 200px, 0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rise {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  33% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes rise {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  33% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

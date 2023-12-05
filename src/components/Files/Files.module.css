@@ -1,0 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.Files {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Files h1 {
+    display: inline-block;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    background-color: var(--yellow);
+    color: var(--blue);
+}

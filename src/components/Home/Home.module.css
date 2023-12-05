@@ -1,0 +1,235 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+:root {
+  --yellow: rgb(252, 204, 1);
+  --blue: rgb(21, 78, 157);
+}
+
+.home_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .1fr .2em 1fr;
+  grid-template-columns: .1fr 1fr;
+  -ms-grid-rows: 1fr .2em 1fr .2em 1fr .2em 1fr;
+  grid-template-rows: repeat(4,1fr);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: center;
+  height: 90vh;
+  gap: .2em;
+  width: 90vw;
+  margin: auto;
+}
+
+.home_grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.home_grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.home_grid > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.home_grid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.home_grid > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.home_grid > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.home_grid > *:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.home_grid > *:nth-child(8) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.home_grid div,
+.home_grid b {
+  width: 100%;
+  height: 100%;
+}
+
+.one {
+  background-color: var(--blue);
+  -webkit-transition: background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+  transition: background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+  -o-transition: transform 500ms ease-in, background-color 500ms ease-in;
+  transition: transform 500ms ease-in, background-color 500ms ease-in;
+  transition: transform 500ms ease-in, background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+}
+
+.one:hover {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  background-color: var(--yellow);
+}
+
+.two {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 3;
+  grid-row-end: 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.2)), to(rgba(252, 204, 1, 0.5))),url("../../assests/Images/sheep.jpg");
+  background-image: -o-linear-gradient(top, rgba(245, 246, 252, 0.2), rgba(252, 204, 1, 0.5)),url("../../assests/Images/sheep.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(252, 204, 1, 0.5)),url("../../assests/Images/sheep.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: right top;
+  color: var(--blue);
+  text-shadow: 2px 2px 24px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: all ease-in-out 200ms;
+  -o-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.two h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15vw;
+  font-style: italic;
+}
+
+.three {
+  background-color: var(--blue);
+  opacity: .8;
+  -webkit-transition: background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+  transition: background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+  -o-transition: transform 500ms ease-in, background-color 500ms ease-in;
+  transition: transform 500ms ease-in, background-color 500ms ease-in;
+  transition: transform 500ms ease-in, background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+}
+
+.three:hover {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  background-color: var(--yellow);
+}
+
+.four {
+  background-color: var(--blue);
+  opacity: .4;
+  -webkit-transition: background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+  transition: background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+  -o-transition: transform 500ms ease-in, background-color 500ms ease-in;
+  transition: transform 500ms ease-in, background-color 500ms ease-in;
+  transition: transform 500ms ease-in, background-color 500ms ease-in, -webkit-transform 500ms ease-in;
+}
+
+.four:hover {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  background-color: var(--yellow);
+}
+
+.five {
+  opacity: .8;
+  background-color: var(--blue);
+  background-image: url("../../assests/Images/logo_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100px;
+}
+
+.six {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 3;
+  grid-column-end: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align:end;
+      -ms-flex-align:end;
+          align-items:flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: white;
+  color: black;
+  text-shadow: 0 0 5px rgba(132, 157, 21, 0.85);
+  border: 1rem solid var(--blue);
+  padding: 1rem;
+}
+
+.six h2 {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 9vw;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font-style: italic;
+}
+
+.six p {
+  text-align: right;
+}
+
+.six h2,
+.six p {
+  margin: 0;
+} 
+
+@media (min-width: 40rem){
+  .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .two h1 {
+    font-size: 13vw;
+  }
+  .five {
+    min-width: 200px;
+  }
+}

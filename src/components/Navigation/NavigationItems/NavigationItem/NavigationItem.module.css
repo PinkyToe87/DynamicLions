@@ -1,0 +1,63 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.NavigationItem {
+    margin: 10px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.NavigationItem a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+    color: rgb(21, 78, 157);
+    background-color: rgb(252, 204, 1);
+    border-bottom: 4px solid rgb(21, 78, 157);
+    font-weight: bold;
+}
+
+
+@media (min-width: 500px) {
+.NavigationItem {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.NavigationItem a {
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+    background-color: rgb(252, 204, 1);
+    border-bottom: 4px solid rgb(21, 78, 157);
+    color: rgb(21, 78, 157);
+ }
+}
+

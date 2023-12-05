@@ -1,0 +1,68 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.event-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.8rem;
+  margin: .5rem auto;
+  width: 100%;
+}
+
+.event-item__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .8rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.eventTitle {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--blue);
+  text-shadow: none;
+}
+
+.event-item h3 {
+  margin: 0;
+}
+
+.event-item h4 {
+  margin: 0;
+  color: var(--blue);
+}
+
+.event-item__description p {
+  color: var(--blue);
+  font-weight: bold;
+  background-color: white;
+}
+
+@media (min-width: 40rem) {
+  .event-item {
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}

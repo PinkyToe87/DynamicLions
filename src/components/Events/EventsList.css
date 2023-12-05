@@ -1,0 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 40rem) {
+  .events-list {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
